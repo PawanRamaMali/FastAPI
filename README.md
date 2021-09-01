@@ -31,9 +31,32 @@ FastAPI stands on the shoulders of giants:
 
 # Installation
 
-```
+```py
 pip install fastapi
 ```
 
 * You will also need an ASGI server, for production such as Uvicorn or Hypercorn
+
+# Demo Code
+
+Create a file main.py with:
+
+```py
+from typing import Optional
+
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
+
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: Optional[str] = None):
+    return {"item_id": item_id, "q": q}
+```
+
 
