@@ -20,5 +20,12 @@ The key features are:
 * Standards-based: Based on (and fully compatible with) the open standards for APIs: OpenAPI (previously known as Swagger) and JSON Schema.
 
 
+# Requirements
 
+* Python 3.6+
+
+FastAPI stands on the shoulders of giants:
+
+* Starlette for the web parts.
+* Pydantic for the data parts.
 
