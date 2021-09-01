@@ -83,3 +83,11 @@ You already created an API that:
 * Both paths take `GET` operations (also known as HTTP methods).
 * The path `/items/{item_id}` has a path parameter `item_id` that should be an `int`.
 * The path `/items/{item_id}` has an optional `str` query parameter `q`
+
+# Interactive API docs
+
+* Now go to `http://127.0.0.1:8000/docs`
+
+* You will see the automatic interactive API documentation (provided by Swagger UI)
+
+
