@@ -2,7 +2,7 @@
 
 You can declare path "parameters" or "variables" with the same syntax used by Python format strings:
 
-```
+```py
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -19,3 +19,19 @@ So, if you run this example and go to http://127.0.0.1:8000/items/foo, you will 
 
 
 {"item_id":"foo"}
+
+
+## Path parameters with types
+
+You can declare the type of a path parameter in the function, using standard Python type annotations:
+
+```py
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get("/items/{item_id}")
+async def read_item(item_id: int):
+    return {"item_id": item_id}
+```    
