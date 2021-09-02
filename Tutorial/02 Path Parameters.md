@@ -35,3 +35,14 @@ app = FastAPI()
 async def read_item(item_id: int):
     return {"item_id": item_id}
 ```    
+
+
+## Pydantic
+
+All the data validation is performed under the hood by Pydantic, so you get all the benefits from it. And you know you are in good hands.
+
+You can use the same type declarations with str, float, bool and many other complex data types.
+
+Several of these are explored in the next chapters of the tutorial.
+
+
